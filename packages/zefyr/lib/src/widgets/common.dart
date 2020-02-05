@@ -7,7 +7,6 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:notus/notus.dart';
-import 'package:zefyr/src/widgets/attr_delegate.dart';
 
 import 'editable_box.dart';
 import 'horizontal_rule.dart';
@@ -62,7 +61,6 @@ class _ZefyrLineState extends State<ZefyrLine> {
       Color cursorColor;
       switch (theme.platform) {
         case TargetPlatform.iOS:
-        case TargetPlatform.macOS:
           cursorColor ??= CupertinoTheme.of(context).primaryColor;
           break;
 
